@@ -1,0 +1,66 @@
+{
+ "took": 199,
+ "timed_out": false,
+ "_shards": {
+  "total": 122,
+  "successful": 122,
+  "skipped": 0,
+  "failed": 0
+ },
+ "hits": {
+  "total": 1,
+  "max_score": 1.0,
+  "hits": [
+   {
+    "_index": "filebeat-6.2.1-2018.04.09",
+    "_type": "doc",
+    "_id": "qWqbqmIBfMfrd5zjdzB_",
+    "_score": 1.0,
+    "_source": {
+     "@timestamp": "2018-04-09T13:32:14.000Z",
+     "offset": 124331,
+     "nginx": {
+      "access": {
+       "referrer": "http://172.16.13.11/app/kibana",
+       "response_code": "304",
+       "remote_ip": "10.10.100.28",
+       "method": "GET",
+       "user_name": "-",
+       "http_version": "1.1",
+       "body_sent": {
+        "bytes": "0"
+       },
+       "remote_ip_list": [
+        "10.10.100.28"
+       ],
+       "url": "/ui/favicons/favicon-32x32.png",
+       "user_agent": {
+        "patch": "3325",
+        "major": "65",
+        "minor": "0",
+        "os": "Windows 10",
+        "name": "Chrome",
+        "os_name": "Windows 10",
+        "device": "Other"
+       }
+      }
+     },
+     "beat": {
+      "hostname": "test",
+      "name": "test",
+      "version": "6.2.1"
+     },
+     "prospector": {
+      "type": "log"
+     },
+     "read_timestamp": "2018-04-09T13:32:17.159Z",
+     "source": "/var/log/nginx/elk_access.log",
+     "fileset": {
+      "module": "nginx",
+      "name": "access"
+     }
+    }
+   }
+  ]
+ }
+}
