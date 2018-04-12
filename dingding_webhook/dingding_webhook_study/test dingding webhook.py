@@ -11,7 +11,8 @@ import urllib.request
 import requests
 import json
 
-webhook_url = "https://oapi.dingtalk.com/robot/send?access_token=45f4b695b1dbe35998626e9083ca8b212d475943259273a699127f1cc76edadb"
+webhook_url = "https://oapi.dingtalk.com/robot/send?access_token=" \
+              "45f4b695b1dbe35998626e9083ca8b212d475943259273a699127f1cc76edadb"
 
 webhook_header = {
     "Content-Type": "application/json",
