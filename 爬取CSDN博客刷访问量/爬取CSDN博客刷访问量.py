@@ -6,13 +6,9 @@
 # file: 爬取CSDN博客刷访问量.py
 # time: 2018/3/1 15:16
 
-
-
-
 '''
 刷来玩玩  刷之前3887 打算刷1W试试 哈哈哈
 '''
-
 
 import requests
 import bs4

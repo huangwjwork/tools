@@ -19,7 +19,7 @@ download_disk = "d:\\"
 bt1024_url = "http://1024.917rbb.com/pw/"
 
 # 图片板块主页，可替换其他板块
-bt1024_index_url = "http://1024.917rbb.com/pw/thread.php?fid=16"
+bt1024_index_url = bt1024_url+"thread.php?fid=16"
 
 # 获取图片板块主页
 bt1024_index_page = requests.get(bt1024_index_url)
