@@ -1,0 +1,981 @@
+{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "UaB0zWIBeYfOo3XWY7Ce",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:56:16.000Z",
+  "offset": 2207918,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29469"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:56:18.737Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "UqB0zWIBeYfOo3XWY7Ce",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:56:16.000Z",
+  "offset": 2208180,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29453"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:56:18.737Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "4qB1zWIBeYfOo3XWbbJB",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:57:16.000Z",
+  "offset": 2209484,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:57:26.739Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "5aB1zWIBeYfOo3XWbbJB",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:57:16.000Z",
+  "offset": 2210264,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:57:26.740Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "6KB1zWIBeYfOo3XWbbJB",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:57:16.000Z",
+  "offset": 2211048,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:57:26.740Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "7KB1zWIBeYfOo3XWbbJB",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:57:16.000Z",
+  "offset": 2212094,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29453"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:57:26.740Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "7aB1zWIBeYfOo3XWbbJB",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:57:16.000Z",
+  "offset": 2212356,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29477"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:57:26.740Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "xqB2zWIBeYfOo3XWRLQb",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:58:16.000Z",
+  "offset": 2213660,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:58:21.742Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "z6B2zWIBeYfOo3XWRLQb",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:58:16.000Z",
+  "offset": 2216008,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:58:21.742Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "0aB2zWIBeYfOo3XWRLQb",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T07:58:16.000Z",
+  "offset": 2216532,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T07:58:21.742Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "HqCEzWIBeYfOo3XW-dnw",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:14:18.000Z",
+  "offset": 2288189,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:14:25.796Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "IKCEzWIBeYfOo3XW-dnw",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:14:18.000Z",
+  "offset": 2288713,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:14:25.796Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "VKCFzWIBeYfOo3XW5NtU",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:15:18.000Z",
+  "offset": 2290275,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:15:25.799Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "V6CFzWIBeYfOo3XW5NtU",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:15:18.000Z",
+  "offset": 2291059,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:15:25.799Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "XaCFzWIBeYfOo3XW5NtU",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:15:18.000Z",
+  "offset": 2292627,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:15:25.799Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "laCGzWIBeYfOo3XWzt23",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:16:18.000Z",
+  "offset": 2295235,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:16:25.802Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "l6CGzWIBeYfOo3XWzt23",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:16:18.000Z",
+  "offset": 2295757,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:16:25.802Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "PKCDzWIBeYfOo3XWEdSi",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:12:18.000Z",
+  "offset": 2277486,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "480"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_aliases&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:12:20.791Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "QaCDzWIBeYfOo3XWEdSi",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:12:18.000Z",
+  "offset": 2278794,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:12:20.791Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}{
+ "_index": "filebeat-6.2.1-2018.04.16",
+ "_type": "doc",
+ "_id": "16CHzWIBeYfOo3XWud8a",
+ "_score": 0.0,
+ "_source": {
+  "@timestamp": "2018-04-16T08:17:18.000Z",
+  "offset": 2300457,
+  "nginx": {
+   "access": {
+    "referrer": "http://172.16.13.11/app/kibana",
+    "response_code": "200",
+    "remote_ip": "172.16.8.241",
+    "method": "POST",
+    "user_name": "-",
+    "http_version": "1.1",
+    "body_sent": {
+     "bytes": "29484"
+    },
+    "remote_ip_list": [
+     "172.16.8.241"
+    ],
+    "url": "/api/console/proxy?path=_mapping&method=GET",
+    "user_agent": {
+     "patch": "3325",
+     "major": "65",
+     "minor": "0",
+     "os": "Windows 10",
+     "name": "Chrome",
+     "os_name": "Windows 10",
+     "device": "Other"
+    }
+   }
+  },
+  "beat": {
+   "hostname": "test",
+   "name": "test",
+   "version": "6.2.1"
+  },
+  "prospector": {
+   "type": "log"
+  },
+  "read_timestamp": "2018-04-16T08:17:25.805Z",
+  "source": "/var/log/nginx/elk_access.log",
+  "fileset": {
+   "module": "nginx",
+   "name": "access"
+  }
+ }
+}
