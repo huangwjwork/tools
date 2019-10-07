@@ -1,0 +1,12 @@
+[Unit]
+Description=prometheus ops-exporter
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/python3/bin/python3 /etc/prometheus/ops_exporter.py  --port=10000
+ExecStop=/bin/kill -9 `ps -ef |  grep ops_exporter.py | grep -v grep | awk '{print $2}'`
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,53 @@
+# 安装prometheus_client
+- hosts: xixin-pro-su,xixin-dbstore-su,xixin-hadoop-su,xixin-tool-su,lfs-k8s-su,lfs-hadoop-su,lfs-dbstore-su,lfs-pro-su,xixin-kubesphere-su
+  remote_user: itservice
+  become: yes
+  become_method: su
+  become_user: root
+  tasks:
+
+  - name: 检查是否有python3，若没有，则不做后续操作
+    shell: ls /usr/local/python3/bin/python3
+    ignore_errors: no
+
+  - name: 拷贝ops_prometheus.py
+    copy:
+      src: ./ops_exporter.py
+      dest: /etc/prometheus/ops_exporter.py
+      owner: root
+      group: root
+      mode: u=rwx
+      backup: yes
+
+  - name: 拷贝centos6 init下service文件
+    copy:
+      src: ./ops-exporter
+      dest: /etc/init.d/ops-exporter
+      owner: root
+      group: root
+      mode: u=rwx
+    when: ansible_distribution_major_version == '6'
+
+  - name:  设置centos6开机自启动ops-exporter
+    when: ansible_distribution_major_version == '6'
+    shell:  /sbin/chkconfig  --add /etc/init.d/ops-exporter ; /sbin/chkconfig ops-exporter  on
+    ignore_errors: yes
+
+  - name: 拷贝centos7 init下service文件
+    copy:
+      src: ./ops-exporter.service
+      dest: /usr/lib/systemd/system/ops-exporter.service
+      owner: root
+      group: root
+      mode: u=rwx
+    when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'
+
+  - name: 设置centos7开机自启动ops-exporter
+    shell: source /etc/profile ; source ~/.bash_profile ; systemctl enable ops-exporter
+    when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'
+
+  - name: 安装依赖包
+    shell: /usr/local/python3/bin/pip3 install prometheus_client psutil
+
+  - name: 启动ops-exporter
+    shell: source /etc/profile ; source ~/.bash_profile ; service ops-exporter start

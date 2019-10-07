@@ -1,0 +1,27 @@
+# 更新exporter
+- hosts: 
+  remote_user: itservice
+  become: yes
+  become_method: su
+  become_user: root
+  tasks:
+  - name: 检查是否有python3，若没有，则不做后续操作
+    shell: ls /usr/local/python3/bin/python3
+    ignore_errors: no
+
+  - name: 安装依赖包
+    shell: /usr/local/python3/bin/pip3 install prometheus_client psutil
+
+  - name: 拷贝ops_exporter.py
+    copy:
+      src: ./ops_exporter.py
+      dest: /etc/prometheus/ops_exporter.py
+      owner: root
+      group: root
+      mode: u=rwx
+      backup: yes
+
+  - name: 启动ops-exporter
+    service:
+      name: ops-exporter
+      state: restarted

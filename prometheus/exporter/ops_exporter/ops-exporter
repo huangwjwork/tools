@@ -1,0 +1,55 @@
+#!/bin/sh
+# chkconfig:   2345 90 10
+# description:  Redis is a persistent key-value database
+
+# Source function library
+. /etc/rc.d/init.d/functions
+
+RETVAL=0
+
+prog="ops-exporter"
+
+start() {
+    echo -n $"Starting $prog: "
+    nohup /usr/local/python3/bin/python3 /etc/prometheus/ops_exporter.py --port=10000 2>&1 1>/dev/null &
+
+
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch /var/lock/subsys/$prog
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    /bin/kill -9 `ps -ef |  grep ops_exporter.py | grep -v grep | awk '{print $2}'`
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/$prog
+}
+
+
+
+# See how we were called.
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    condrestart)
+        if [ -f /var/lock/subsys/$prog ]; then
+            stop
+            start
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        RETVAL=1
+esac
+
+exit $RETVAL

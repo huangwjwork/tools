@@ -1,0 +1,21 @@
+registerAPI:
+  'http://10.16.17.61:8500/v1/agent/service/register'
+deregisterAPI:
+  'http://10.16.17.61:8500/v1/agent/service/deregister/'
+servicelistAPI:
+  'http://10.16.17.61:8500/v1/agent/services'
+Exporter-Type:
+  monitoring:
+    default_metrics_path: '/metrics'
+  node:
+    default_metrics_path: '/metrics'
+    groups:
+    - '生产应用'
+    - '生产数据库'
+    - '运维工具'
+  microservice:
+    default_metrics_path: '/prometheus_metrics'
+  middleware:
+    default_metrics_path: '/metrics'
+  ops-exporter:
+    default_metrics_path: '/metrics'

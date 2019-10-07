@@ -1,0 +1,34 @@
+{
+    "receivers": [
+        "https://oapi.dingtalk.com/robot/send?access_token="
+    ],
+    "dsl": {
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "range": {
+                            "@timestamp": {
+                                "gte": "now-1m",
+                                "lte": "now"
+                            }
+                        }
+                    },
+                    {
+                        "terms": {
+                            "tags": [
+                                "hadoop",
+                                "hbase"
+                            ]
+                        }
+                    },
+                    {
+                        "match_phrase": {
+                            "log_level": "WARN"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

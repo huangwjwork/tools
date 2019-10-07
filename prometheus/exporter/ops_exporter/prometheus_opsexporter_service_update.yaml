@@ -1,0 +1,47 @@
+# 安装prometheus_client
+- hosts: 
+  remote_user: itservice
+  become: yes
+  become_method: su
+  become_user: root
+  tasks:
+
+  - name: 检查是否有python3，若没有，则不做后续操作
+    shell: ls /usr/local/python3/bin/python3
+    ignore_errors: no
+
+  - name: 拷贝ops_prometheus.py
+    copy:
+      src: ./ops_exporter.py
+      dest: /etc/prometheus/ops_exporter.py
+      owner: root
+      group: root
+      mode: u=rwx
+      backup: yes
+
+  - name: 拷贝centos6 init下service文件
+    copy:
+      src: ./ops-exporter
+      dest: /etc/init.d/ops-exporter
+      owner: root
+      group: root
+      mode: u=rwx
+      backup: yes
+    when: ansible_distribution_major_version == '6'
+
+  - name: 拷贝centos7 init下service文件
+    copy:
+      src: ./ops-exporter.service
+      dest: /usr/lib/systemd/system/ops-exporter.service
+      owner: root
+      group: root
+      mode: u=rwx
+      backup: yes
+    when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'
+
+  - name: centos7 daemon-reload
+    shell: source /etc/profile ; source ~/.bash_profile ; systemctl daemon-reload
+    when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'
+
+  - name: 重启ops-exporter
+    shell: source /etc/profile ; source ~/.bash_profile ; service ops-exporter restart
