@@ -53,20 +53,15 @@ def get_esdata(app_list, log_path='./', es_api='http://10.16.17.40:9200'):
                 elastic_search = es_connect.search(scroll='1m',
                                                    size=100,
                                                    body=query_DSL)
-                elastic_scroll_id = elastic_search['_scroll_id']
-                for i in elastic_search['hits']['hits']:
-                    with open(os.path.join(log_path, log_filename), 'a') as f:
-                        f.write(i['_source']['message'] + '\n')
-                    elastic_scroll = es_connect.scroll(
-                        scroll_id=elastic_scroll_id, scroll='1m')
-                    elastic_scroll_id = elastic_scroll['_scroll_id']
-                    while len(elastic_scroll['hits']['hits']) > 0:
-                        for i in elastic_scroll['hits']['hits']:
-                            with open(os.path.join(log_path, log_filename),
-                                      'a') as f:
-                                f.write(i['_source']['message'] + '\n')
-                        elastic_scroll = es_connect.scroll(
-                            scroll_id=elastic_scroll_id, scroll='1m')
+
+                while len(elastic_search['hits']['hits']) > 0:
+                    for hit in elastic_search['hits']['hits']:
+                        with open(os.path.join(log_path, log_filename),
+                                  'a') as f:
+                            f.write(i['_source']['message'] + '\n')
+                        elastic_scroll_id = elastic_search['_scroll_id']
+                        elastic_search = es_connect.scroll(
+                            scroll_id=elastic_scroll_id, size=100, scroll='1m')
             time.sleep(2)
             gte = lte
         except Exception:
